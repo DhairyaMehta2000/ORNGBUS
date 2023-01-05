@@ -1,0 +1,57 @@
+<div class="container">
+    <h1>Enter Aadhar number to check bookings</h1>
+    <br>
+    Enter Aadhar Number : <input type="number" [(ngModel)]="aadh">
+    <br>
+    <button type="submit" (click)="btn()">Check bookings</button>
+    
+    <table class="table table-bordered" style="margin-top: 20px;">
+        <thead>
+          <tr>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Customer Gender</th>
+            <th scope="col">Customer Age</th>
+            <th scope="col">Seat Number</th>
+            <th scope="col">Booked From</th>
+            <th scope="col">Booked To</th>
+            <th scope="col">Paid Fare</th>
+            <th scope="col">Bus Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let booking of filteredBookings">
+            <th scope="col">{{booking.customerName}}</th>
+                <td>
+                    {{booking.customerGender}}
+                </td>
+                <td>
+                    {{booking.customerAge}}
+                </td>
+                <td>
+                    {{booking.seatNumber}}
+                </td>
+                <td>
+                    {{booking.bookedFrom}}
+                </td>
+
+                <td> 
+                    {{booking.bookedTo}}
+                </td>
+
+                <td>
+                    {{booking.paidFair}}
+                </td>
+
+                <td>
+                    {{booking.busNumber}}
+                </td>
+                
+          </tr>
+         
+        </tbody>
+      </table>
+
+
+
+    <ng-template #elseBlock></ng-template>
+</div>

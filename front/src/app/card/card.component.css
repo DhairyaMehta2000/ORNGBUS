@@ -1,0 +1,23 @@
+
+
+.padding {
+    padding: 5rem !important;
+}
+
+.form-control {
+    margin-top: 3%;
+}
+
+.form-control:focus {
+    box-shadow: 10px 0px 0px 0px #ffffff !important;
+    border-color: #4ca746;
+    /* border-color: goldenrod; */
+}
+
+.card-header {
+    background-color: orange;
+}
+
+.card-body {
+    background-color: peachpuff;
+}
